@@ -8,23 +8,35 @@
     </head>
     <body>
         <header>
-            <img src="#" alt="Website Logo">
-            <h2>Resturant Finder</h2>
-            <p class="currentdate"></p>
-            <div class="animation">O-}-{</div>
+            <div class="header-logo">
+                <picture class="logo"><img src="images/Logo.webp" width="200" alt="Restaurant Finder img" ></picture>
+            </div>
+            <div class="title">
+                    <h1 id="title-big">Restaurant</h1>
+                    <h3 id="title-small">Finder</h3>
+            </div>
+            <div class="animation">
+                    O-}-{
+            </div>
         </header>
-
         <main>
-            <label for="userinput">Zip Code</label>
-            <input type="text"  id="userinput" name="userinput" required>
-            <section>
-                <h3>This is the main of our site</h3>
-            </section>
+            <div id="zipcode">
+                <label for="userinput">Zip Code</label>
+                <input type="text"  id="userinput" name="userinput" required>
+                    <h3>This is the main of our site</h3>
+            </div>
+            <div id="Restaurants">
+                <article>Restaurant 1</article>
+                <article>Restaurant 2</article>
+                <article>Restaurant 3</article>
+                <article>Restaurant 4</article>
+            </div>
         </main>
-
         <footer>
             <div class="assignment">
                 <p class="assignmentLine">&copy;<span id="year"></span>  <strong>Jonathan Uribe, Timothy Smith, & Devin Patterson</strong> | WDD 230 Final Project | <span id="currentdate"></span></p>
+            </div>    
+            <div id="last_modification">    
                 <script id="last" src="js/date.js"></script>
             </div>
             <script src="/js/cards.js"></script>
