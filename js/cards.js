@@ -30,6 +30,7 @@ fetch(`https://restaurants-near-me-usa.p.rapidapi.com/restaurants/location/zipco
 			p2.textContent = `${restaurants.address}`;
 			p3.textContent = `${restaurants.phone}`;
 			p4.textContent = `${restaurants.website}`;
+			
 			card.append(h2);
 			card.append(p1);
 			card.append(p2);
