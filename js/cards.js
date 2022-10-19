@@ -1,42 +1,44 @@
-// Variable for the User's Zip Code//
 
-user_zip = "84128"
+let key = "fe226f124cmshd8ec7c39c68353ap1855c0jsna94353498904"
+const cards = document.querySelector('.cards');
 
-// API URL, API-KEY, & Fetch//
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'fe226f124cmshd8ec7c39c68353ap1855c0jsna94353498904',
-		'X-RapidAPI-Host': 'restaurants-near-me-usa.p.rapidapi.com'
-	}};
+function getRestaurants() {
+	let userinput = document.getElementById('userinput').value;
 
-fetch(`https://restaurants-near-me-usa.p.rapidapi.com/restaurants/location/zipcode/${user_zip}/0`, options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.then(function (jsonObject) {
-		const restaurants = ['restaurants'];
-		const cards = document.querySelector('.cards');
+	fetch(`https://restaurants-near-me-usa.p.rapidapi.com/restaurants/location/zipcode/${userinput}/0`, {
+		method: 'GET',
+		headers: {
+			'X-RapidAPI-Key': key,
+			'X-RapidAPI-Host': 'restaurants-near-me-usa.p.rapidapi.com'
+		}
+	})
+		.then(response => response.json())
+		.then(response => console.log(response))
+		.then(response => showRestaurants(response))
+		.catch(err => console.error(err));
+};
 
-		restaurants.array.forEach(element => {
-			let card = document.createElement('section');
-			let h2 = document.createElement('h2');
-			let p1 = document.createElement('p');
-			let p2 =  document.createElement('p');
-			let p3 = document.createElement('p');
-			let p4 = document.createElement('p');
+function showRestaurants(response) {
+	response.restaurants.forEach(restaurant => {
+		let card = document.createElement('section');
+		let h2 = document.createElement('h2');
+		let p1 = document.createElement('p1');
+		let p2 = document.createElement('p2');
+		let p3 = document.createElement('p3');
+		let p4 = document.createElement('p4');
 
-			h2.textContent = `${restaurants.restaurantName}`;
-			p1.textContent = `${restaurants.hoursInterval}`;
-			p2.textContent = `${restaurants.address}`;
-			p3.textContent = `${restaurants.phone}`;
-			p4.textContent = `${restaurants.website}`;
-			
-			card.append(h2);
-			card.append(p1);
-			card.append(p2);
-			card.append(p3);
-			card.append(p4);
-			cards.append(card);
-		});
+		h2.innerHTML = `${restaurant.restaurantName}`;
+		p1.innerHTML = `${restaurant.hoursInterval}`;
+		p2.innerHTML = `${restaurant.phone}`;
+		p3.innerHTML = `${restaurant.address}`;
+		p4.innerHTML = `${restaurant.website}`;
 
-});
+		card.append(h2);
+		card.append(p1);
+		card.append(p2);
+		card.append(p3);
+		card.append(p4);
+
+		cards.appendChild(card);	
+	});
+};

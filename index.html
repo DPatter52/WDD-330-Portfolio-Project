@@ -4,7 +4,7 @@
         <title>Resturant Finder</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
         <header>
@@ -22,22 +22,23 @@
         <main>
             <div id="zipcode">
                 <label for="userinput">Zip Code</label>
-                <input type="text"  id="userinput" name="userinput" required>
-                    <h3>This is the main of our site</h3>
+                <input type="text" id="userinput" name="userinput" required>
+                <button onclick='getRestaurants()'>Find Restaurants</button>
             </div>
             
-            <div id="cards"></div>
+            <section id="cards"></section>
 
         </main>
         <footer>
             <div class="assignment">
                 <p class="assignmentLine">&copy;<span id="year"></span>  <strong>Jonathan Uribe, Timothy Smith, & Devin Patterson</strong> | WDD 230 Final Project | <span id="currentdate"></span></p>
-            </div>    
-            <div id="last_modification">    
+            </div>  
+
+            <div id="last_modification">
                 <script id="last" src="js/date.js"></script>
             </div>
-            <script src="/js/cards.js"></script>
-            <P><P>
+            
         </footer>
+        <script src="js/cards.js"></script>
     </body>
 </html>
