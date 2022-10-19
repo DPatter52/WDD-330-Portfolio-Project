@@ -5,25 +5,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <div class="header-logo">
-                <picture class="logo"><img src="#" width="200" alt="Restaurant Finder img" ></picture>
+                <picture class="logo"><img src="#" width="200" alt="Logo" ></picture>
             </div>
-            <div class="title">
-                    <h1 id="title-big">Restaurant</h1>
-                    <h3 id="title-small">Finder</h3>
-            </div>
+            <div class="title">RESTAURANT FINDER</div>
             <div class="animation">
-                    O-}-{
+                    Animation 
             </div>
         </header>
         <main>
             <div id="zipcode">
-                <label for="userinput">Zip Code</label>
+                <label class="userinput" for="userinput">Please Enter ZIP Code Below</label>
                 <input type="text" id="userinput" name="userinput" required>
-                <button onclick='getRestaurants()'>Find Restaurants</button>
+                <button class="userinput_button" onclick='getRestaurants()'>Find Restaurants</button>
             </div>
             
             <section id="cards"></section>

@@ -1,20 +1,28 @@
-
+html {
+    font-family: 'Open Sans', sans-serif;  
+}
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    column-gap: 15rem;
-
+    justify-items: center;
+    margin: 20px;
+    
 }
-#title-big{
-    margin-left: -3rem;
+
+.title{
+    font-size: 40px;
+    font-weight: 600;
 }
 
 main {
-
-    background-color: gray;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: rgb(231, 231, 231);
+    margin-bottom: 2rem;
+    padding: 5rem;
 
 }
 #zipcode{
@@ -22,13 +30,46 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    row-gap: 1em;
+    
 }
+
+.userinput {
+    font-size: 30px;
+}
+
+#userinput {
+    font-size: 25px;
+    outline: none;
+}
+
+.userinput_button {
+    font-size: 20px;
+    padding: .5em;
+    border-radius: 10px;
+    border: solid rgb(178, 178, 178) 1px;
+    background-color: rgb(232, 232, 232);
+}
+
+.userinput_button:hover {
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.userinput_button:active {
+    background-color: white;
+    color: black;
+}
+
+
 #Restaurants{
     display: flex;
     justify-content: center;
     column-gap: 15rem;
     
 }
+
 div article{
     border-style: solid;
     justify-content: center;
@@ -47,6 +88,7 @@ div article{
     justify-content: center;
 
 }
-footer {
 
+footer {
+    font-size: small;
 }
