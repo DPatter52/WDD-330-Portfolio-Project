@@ -1,5 +1,5 @@
 
-let key = "fe226f124cmshd8ec7c39c68353ap1855c0jsna94353498904"
+let key = "3a94406d73mshb1d2ba951df67fbp13b018jsn2a0cc1fd637f"
 const cards = document.querySelector('.cards');
 
 function getRestaurants() {
