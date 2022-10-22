@@ -2,6 +2,27 @@ html {
     font-family: 'Open Sans', sans-serif;  
 }
 
+/* Animation css */
+
+.animation {
+    animation-duration: 5s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+    0% {
+      margin-left: 0%;
+    }
+    50% {
+      margin-left: 300px;
+    }
+    100% {
+      margin-left: 0%;
+    }
+    
+  }
+
 header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
