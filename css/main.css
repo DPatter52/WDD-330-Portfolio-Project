@@ -62,7 +62,7 @@ main {
     margin-bottom: 20px;
     padding: 30px;
     text-align: center;
-    border: dotted black 10px;
+    border: dashed black 6px;
     border-radius: 20px;
 }
 
