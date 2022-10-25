@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
     <head>  
         <title>Resturant Finder</title>
         <meta charset="UTF-8">
@@ -27,18 +28,71 @@
             </div>
             
             <section id="cards"></section>
+=======
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 330: Final Portfolio Project - Restaurant Finder">
+    <title>Restaurant Finder</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap"
+      rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="header-logo">
+        <picture class="logo"><img src="images/restaurant-min.png" width="200" alt="Restaurant Finder Logo"></picture>
+      </div>
+      <h1 class="title">RESTAURANT FINDER</h1>
+      <div class="animation">YOUR CULINARY ADVENTURE AWAITS!</div>
+    </header>
+    <main>
+      <section class="opening_para">
+        <h2> Welcome to Restaurant Finder!</h2>
+        <div class="para_part1">
+          Have you ever had one of those moments
+          where you're in a new place and you aren't sure what there is to eat
+          around you? Or your tired of scrolling through maps for 30 minutes
+          just to try and find something nearby?
+        </div>
+>>>>>>> 8ad1d178010bde4ee5907addf87bd5dd25b7b462
 
-        </main>
-        <footer>
-            <div class="assignment">
-                <p class="assignmentLine">&copy;<span id="year"></span>  <strong>Jonathan Uribe, Timothy Smith, & Devin Patterson</strong> | WDD 230 Final Project | <span id="currentdate"></span></p>
-            </div>  
+        <div class="para_part2">
+          Well say goodbye to that headache and slap your ZIP Code into the slot
+          below and watch the Restaurants flow!
+        </div>
+      </section>
 
-            <div id="last_modification">
-                <script id="last" src="js/date.js"></script>
-            </div>
-            
-        </footer>
-        <script src="js/cards.js"></script>
-    </body>
+      <div id="zipcode">
+        <label class="userinput" for="userinput"
+          >Please Enter ZIP Code Below</label>
+        <input type="text" id="userinput" name="userinput" required>
+        <button type="submit" class="userinput_button" onclick="getRestaurants()">
+          SEARCH
+        </button>
+      </div>
+
+      <section id="cards"></section>
+    </main>
+    <footer>
+      <div class="assignment">
+        <p class="assignmentLine">
+          &copy;<span id="year"></span>
+          <strong>Jonathan Uribe, Timothy Smith, & Devin Patterson</strong> |
+          WDD 230 Final Project | <span id="currentdate"></span>
+        </p>
+      </div>
+
+      <div id="last_modification">
+        <script id="last" src="js/date.js"></script>
+      </div>
+    </footer>
+    <script src="js/cards.js"></script>
+  </body>
 </html>
