@@ -1,202 +1,187 @@
 @media only screen and (min-width: 10px) and (max-width: 599px) {
+  /* Animation css */
 
-    /* Animation css */
+  div.animation {
+    max-width: 100%;
+    text-align: center;
+    animation-duration: 5s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-weight: 700;
+    box-shadow: 10px 12px 0px 4px;
+    border: solid black 5px;
+    margin: 0 auto auto -4em;
+  }
 
-    div.animation {
-        max-width:100%;
-        text-align: center;
-        animation-duration: 5s;
-        animation-name: slidein;
-        animation-iteration-count: infinite;
-        font-size: 9px;
-        padding: 20px;
-        border-radius: 15px;
-        font-family: sans-serif;
-        font-weight: 700;
-        box-shadow: 10px 12px 0px 4px;
-        border: solid black 5px;
-        margin: 0 auto auto -4em;
+  @keyframes slidein {
+    0% {
+      margin-bottom: 70px;
+      margin-top: 0%;
+    }
+    50% {
+      margin-top: 70px;
+      margin-bottom: 0%;
+    }
+    100% {
+      margin-bottom: 70px;
+      margin-top: 0%;
+    }
+  }
 
-        
-    }
-    
-    @keyframes slidein {
-        0% {
-        margin-bottom: 100px;
-        margin-top: 0%;
-        }
-        50% {
-        margin-top: 100px;
-        margin-bottom: 0%;
-        }
-        100% {
-        margin-bottom: 100px;
-        margin-top: 0%;
-        }
-    }
-    
-    html {
-        font-family: "Open Sans", sans-serif;
-        margin: 0 auto;
+  html {
+    font-family: "Open Sans", sans-serif;
+    margin: 0 auto;
+  }
 
-    }
-    
-    header {
-        gap: 40px;
-        max-width: 100% ;
-        display: flex;
-        align-items: center;
-        margin: 0 auto;
-    }
-    img{
-        max-width: 80px;
-    }  
-    
-    h1.title {
-        font-size: 20px;
-        margin-left:-2em;
-        font-weight: 600;
-    }
-    
-    main {
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-        margin-bottom: 2rem;
-    }
-    
-    section.opening_para {
-        margin: 0.7em auto;
-        max-width: 80%;
-        font-size: 10px;
-        font-weight: 600;
-        margin-bottom: 20px;
-        padding:2rem;
-        text-align: center;
-        border: dashed black 6px;
-        border-radius: 20px;
-    }
-    
-    .para_part2 {
-        font-size: 15px;
-        margin-top: 20px;
-        font-style: oblique;
-    }
-    
-    #zipcode {
-        margin: 5rem auto;
-        max-width: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        row-gap: 1em;
-        background-color: rgb(0, 0, 0);
-        margin-top: 50px;
-        padding-top: 35px;
-        padding-bottom: 35px;
-    }
-    
-    .userinput {
-        font-size: 20px;
-        color: white;
-        font-weight: 800;
-    }
-    
-    #userinput {
-        padding:1em;
-        width: 40%;
-        font-size: 20px;
-        text-align: center;
-        font-weight: bold;;
-        outline: none;
-    }
-    
-    .userinput_button {
-        font-size: 30px;
-        padding: 20px;
-        border-radius: 10px;
-        font-weight: 600;
-    }
-    
-    .userinput_button:hover {
-        background-color: #bababa;
-        color: rgb(0, 0, 0);
-        cursor: pointer;
-    }
-    
-    .userinput_button:active {
-        background-color: white;
-        color: black;
-    }
-    
-    .divider {
-        background-color: white;
-    }
-    
-    #cards {
-        display: flex;
-        flex-direction: column;
-        margin-top: 50px;
-        padding: 20px;
-        gap: 20px;
-    }
-    
-    #cards section {
-        display: grid;
-        border: solid black 5px;
-        border-radius: 10px;
-        padding: 15px;
-    }
-    
-    h2 {
-        text-align: center;
-        max-width:90%;
-        background-color: black;
-        font-size: 30px;
-        color: white;
-        padding: 20px;
-        border-radius: 10px;
-    }
-    
-    div p1,
-    p2,
-    p3,
-    p4 {
-        max-width:90%;
+  header {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 2fr;
+    align-items: center;
+  }
+  img {
+    max-width: 80px;
+  }
 
-    }
-    
-    #Restaurants {
-        display: flex;
-        justify-content: center;
-        column-gap: 15rem;
-    }
-    
-    div article {
-        border-style: solid;
-        justify-content: center;
-    }
-    
-    .assignment {
-        display: flex;
-        justify-content: center;
-    }
-    
-    #last_modification {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    
-    footer {
-        width: 80%;
-        font-size: smaller;
-        text-align: center;
-        padding: 20px;
-        background-color: black;
-        color: white;
-        margin: 0 auto;
+  h1.title {
+    font-size: 25px;
+    margin-right: 7em;
+    font-weight: 600;
+    width: 100px;
+  }
 
-    }
+  main {
+    margin-top: 2rem;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .opening_para {
+    margin: 0.7em auto;
+    max-width: 80%;
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 2rem;
+    text-align: center;
+    border: dashed black 6px;
+    border-radius: 20px;
+  }
+
+  .para_part1 {
+    font-size: 18px;
+  }
+
+  .para_part2 {
+    font-size: 20px;
+    margin-top: 20px;
+    font-style: oblique;
+  }
+
+  #zipcode {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1em;
+    background-color: rgb(0, 0, 0);
+    margin-top: 50px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  .userinput {
+    font-size: 20px;
+    color: white;
+    font-weight: 800;
+  }
+
+  #userinput {
+    padding: .5em;
+    max-width: 250px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    outline: none;
+  }
+
+  .userinput_button {
+    font-size: 25px;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+
+  .userinput_button:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 0.5px solid white;
+  }
+
+  .userinput_button:active {
+    background-color: white;
+    color: black;
+  }
+
+  .divider {
+    background-color: white;
+  }
+
+  #cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 1em;
+  }
+
+  #cards section {
+    display: grid;
+    border: solid black 5px;
+    border-radius: 10px;
+    padding: 15px;
+    height: 400px;
+  }
+
+  #restaurantName {
+    text-align: left;
+    max-width: 420px;
+    background-color: black;
+    font-size: 25px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .para_title {
+    text-align: center;
+    background-color: black;
+    font-size: 25px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  div p1,
+  p2,
+  p3,
+  p4 {
+    font-size: 18px;
+    margin-left: 2em;
+  }
+
+  footer {
+    font-size: smaller;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+  }
 }

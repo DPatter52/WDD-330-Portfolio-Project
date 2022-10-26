@@ -1,208 +1,187 @@
 @media only screen and (min-width: 1000px) {
-
-
   /* Animation css */
 
   div.animation {
-      max-width:90%;
-      text-align: center;
-      animation-duration: 5s;
-      animation-name: slidein;
-      animation-iteration-count: infinite;
-      font-size: 30px;
-      border-radius: 15px;
-      font-family: sans-serif;
-      font-weight: 700;
-      box-shadow: 10px 12px 0px 4px;
-      border: solid black 5px;
-
+    max-width: 90%;
+    text-align: center;
+    animation-duration: 5s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    font-size: 30px;
+    border-radius: 15px;
+    font-family: sans-serif;
+    font-weight: 700;
+    box-shadow: 10px 12px 0px 4px;
+    border: solid black 5px;
+    padding: 0.5em;
   }
-  
+
   @keyframes slidein {
-      0% {
+    0% {
       margin-bottom: 100px;
       margin-top: 0%;
-      }
-      50% {
+    }
+    50% {
       margin-top: 100px;
       margin-bottom: 0%;
-      }
-      100% {
+    }
+    100% {
       margin-bottom: 100px;
       margin-top: 0%;
-      }
-  }
-  
-  html {
-      font-family: "Open Sans", sans-serif;
-      margin: 0 auto;
-  }
-  header {
-      margin-left: 10em;
-      max-width: 100% ;
-      display: flex;
-      gap: 4em;
-      align-items: center;
-  }
-  img{
-      max-width: 150px;
-  }
-  
-  h1.title {
-      margin-left:1em;
-      font-size: 50px;
-      font-weight: 600;
-  }
-  
-  section.opening_para{
-      margin: 1em auto;
-      max-width: 55% ;
-      font-size: 30px;
-      font-weight: 600;
-      padding: 30px;
-      text-align: center;
-      border: dashed black 6px;
-      border-radius: 20px;
+    }
   }
 
-  
-  .para_part2 {
-      font-size: 25px;
-      margin-top: 20px;
-      font-style: oblique;
+  html {
+    font-family: "Open Sans", sans-serif;
+    margin: 0 auto;
   }
-  
-      
+  header {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 2fr;
+    align-items: center;
+  }
+
+  img {
+    max-width: 200px;
+  }
+
+  main {
+    margin-top: 5rem;
+  }
+
+  h1.title {
+    margin-right: 6em;
+    font-size: 50px;
+    font-weight: 600;
+    width: 200px;
+  }
+
+  .opening_para {
+    margin: 1em auto;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 2em;
+    text-align: center;
+    border: dashed black 6px;
+    border-radius: 20px;
+  }
+
+  .para_part2 {
+    font-size: 35px;
+    margin-top: 20px;
+    font-style: oblique;
+  }
+
   #zipcode {
-      max-width: 45% ;
-      margin:0 auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      row-gap: 1em;
-      background-color: rgb(0, 0, 0);
-      margin-top: 50px;
-      padding-top: 35px;
-      padding-bottom: 35px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1em;
+    background-color: rgb(0, 0, 0);
+    margin-top: 50px;
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
 
   .userinput {
-      font-size: 30px;
-      color: white;
-      font-weight: 800;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
   }
-  
-  #userinput {
-      padding:1em;
-      width: 45%;
-      font-size: 25px;
-      font-weight: bold;;
-      text-align: center;
-      outline: none;
-  }
-  
-  .userinput_button {
-      font-size: 30px;
-      padding: 20px;
-      border-radius: 10px;
-      font-weight: 600;
-  }
-  
-  .userinput_button:hover {
-      background-color: #bababa;
-      color: rgb(0, 0, 0);
-      cursor: pointer;
-  }
-  
-  .userinput_button:active {
-      background-color: white;
-      color: black;
-  }
-  
-  .divider {
-      background-color: white;
-  }
-  
-  #cards {
 
-      max-width:95%;
-      margin:1em auto;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-auto-rows: 400px;
-      padding: 20px;
-      gap: 20px;
+  #userinput {
+    font-size: 50px;
+    max-width: 250px;
+    padding: .5em;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+  }
+
+  .userinput_button {
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 600;
+  }
+
+  .userinput_button:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 1px solid white;
+  }
+
+  .userinput_button:active {
+    background-color: white;
+    color: black;
+  }
+
+  .divider {
+    background-color: white;
+  }
+
+  #cards {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
   }
 
   #cards section {
+    display: grid;
+    border: solid black 5px;
+    border-radius: 10px;
+    padding: 1em;
+  }
 
-      width:80%;
-      margin:0 auto;
-      display: grid;
-      border: solid black 5px;
-      border-radius: 10px;
-      padding: 15px;
+  #restaurantName {
+    text-align: left;
+    max-width: 550px;
+    background-color: black;
+    font-size: 30px;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
   }
-  
-  h2 {
-      text-align: center;
-      max-width:95%;
-      background-color: black;
-      color: white;
-      padding: 20px;
-      border-radius: 10px;
+
+  .para_title {
+    text-align: center;
+    max-width: 95%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
   }
-  
+
   div p1,
   p2,
   p3,
   p4 {
+    font-size: 25px;
+    margin-left: 2em;
+    margin: 1em;
+  }
 
-      max-width:95%;
-      
-  }
-  
-  #Restaurants {
-      display: flex;
-      justify-content: center;
-      column-gap: 15em;
-  }
-  
-  div article {
-      border-style: solid;
-      justify-content: center;
-  }
-  
-  .assignment {
-      display: flex;
-      justify-content: center;
-  }
-  
-  #last_modification {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-  }
-  
   footer {
-      margin: 0 auto;
-      max-width: 70% ;
-      font-size: 20px ;
-      text-align: center;
-      padding: 20px;
-      background-color: black;
-      color: white;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
   }
-  
-  @media only screen and (min-width: 1950px) and (max-width: 4000px){
+
+  @media only screen and (min-width: 1950px) and (max-width: 4000px) {
     header {
-      margin:0 auto;
-      max-width: 70% ;
+      margin: 0 auto;
+      max-width: 70%;
       display: flex;
       gap: 12em;
       align-items: center;
-      }
-   }
-
+    }
+  }
 }

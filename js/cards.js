@@ -40,14 +40,28 @@ function showRestaurants(response) {
     h2.innerHTML = `${restaurant.restaurantName}`;
 
     if (restaurant.hoursInterval == "") {
-      p1.innerHTML = `<strong>Business Hours: </strong>N/A`;
+      p1.innerHTML = `<strong>-Business Hours: </strong>N/A`;
     } else {
-      p1.innerHTML = `<strong>Business Hours: </strong>${restaurant.hoursInterval}`;
+      p1.innerHTML = `<strong>-Business Hours: </strong>${restaurant.hoursInterval}`;
     }
 
-    p2.innerHTML = `<strong>Phone Number: </strong>${restaurant.phone}`;
-    p3.innerHTML = `<strong>Address: </strong>${restaurant.address}`;
-    p4.innerHTML = `<strong>Website: </strong>${restaurant.website}`;
+    if (restaurant.phone == "") {
+      p2.innerHTML = `<strong>-Phone Number: </strong>N/A`;
+    } else {
+      p2.innerHTML = `<strong>-Phone Number: </strong>${restaurant.phone}`;
+    }
+
+    if (restaurant.address == "") {
+      p3.innerHTML = `<strong>-Address: </strong>N/A`;
+    } else {
+      p3.innerHTML = `<strong>-Address: </strong>${restaurant.address}`;
+    }
+
+    if (restaurant.website == "") {
+      p4.innerHTML = `<strong>-Website: </strong>N/A`;
+    } else {
+      p4.innerHTML = `<strong>-Website: </strong>${restaurant.website}`;
+    }
 
     card.append(h2);
     card.append(p1);
