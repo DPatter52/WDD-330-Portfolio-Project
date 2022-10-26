@@ -2,6 +2,7 @@ let key = "3a94406d73mshb1d2ba951df67fbp13b018jsn2a0cc1fd637f";
 const cards = document.getElementById("cards");
 
 function getRestaurants() {
+
   let userinput = document.getElementById("userinput").value;
 
   fetch(
@@ -21,13 +22,22 @@ function getRestaurants() {
 }
 
 function showRestaurants(response) {
+
   response.restaurants.forEach((restaurant) => {
-    let card = document.createElement("section");
-    let h2 = document.createElement("h2");
-    let p1 = document.createElement("p1");
-    let p2 = document.createElement("p2");
-    let p3 = document.createElement("p3");
-    let p4 = document.createElement("p4");
+    let card = document.getElementById("card");
+    // if (card) {
+    //   card.innerHTML = ""
+    // }
+    let h2 = document.getElementById("h2");
+  
+    let p1 = document.getElementById("p1");
+
+    let p2 = document.getElementById("p2");
+  
+    let p3 = document.getElementById("p3");
+ 
+    let p4 = document.getElementById("p4");
+ 
 
     h2.innerHTML = `${restaurant.restaurantName}`;
     p1.innerHTML = `<strong>Business Hours: </strong>${restaurant.hoursInterval}`;
@@ -42,5 +52,7 @@ function showRestaurants(response) {
     card.append(p4);
 
     cards.appendChild(card);
+
+
   });
 }
